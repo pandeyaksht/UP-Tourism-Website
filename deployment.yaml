@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: up-tourism
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: up-tourism
+  template:
+    metadata:
+      labels:
+        app: up-tourism
+    spec:
+      containers:
+      - name: up-tourism
+        image: up-tourism:1.0
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
