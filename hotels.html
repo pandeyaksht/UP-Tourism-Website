@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotels | Uttar Pradesh Tourism</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-hotel"></i>
+
+<div>
+
+<h2>UP Tourism</h2>
+
+<small>Explore • Experience • Discover</small>
+
+</div>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="attractions.html">Attractions</a></li>
+
+<li><a href="hotels.html" class="active">Hotels</a></li>
+
+<li><a href="guides.html">Travel Guide</a></li>
+
+<li><a href="booking.html">Booking</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<span class="hero-tag">
+
+Luxury • Comfort • Budget
+
+</span>
+
+<h1>Hotels & Accommodation</h1>
+
+<p>
+
+Choose from luxury resorts, heritage hotels and affordable stays across Uttar Pradesh.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Search -->
+
+<section class="section">
+
+<h2>Find Your Stay</h2>
+
+<p class="section-text">
+
+Search hotels by city or category.
+
+</p>
+
+<div class="search-box">
+
+<input type="text"
+
+id="hotelSearch"
+
+placeholder="Search hotel...">
+
+<button>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</button>
+
+</div>
+
+<div class="filter-buttons">
+
+<button class="filter-btn active"
+
+data-filter="all">
+
+All
+
+</button>
+
+<button class="filter-btn"
+
+data-filter="luxury">
+
+Luxury
+
+</button>
+
+<button class="filter-btn"
+
+data-filter="heritage">
+
+Heritage
+
+</button>
+
+<button class="filter-btn"
+
+data-filter="budget">
+
+Budget
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Hotels -->
+
+<section class="section">
+
+<div class="cards">
+
+<!-- Hotel 1 -->
+
+<div class="card hotel luxury">
+
+<img src="images/itc-mughal.jpg" alt="ITC Mughal">
+
+<div class="card-content">
+
+<h3>ITC Mughal</h3>
+
+<p><i class="fa-solid fa-location-dot"></i> Agra</p>
+
+<p>★★★★★ Luxury hotel near the Taj Mahal with spa and fine dining.</p>
+
+<a href="booking.html">Book Now →</a>
+
+</div>
+
+</div>
+
+<!-- Hotel 2 -->
+
+<div class="card hotel luxury">
+
+<img src="images/oberoi.jpg" alt="The Oberoi Amarvilas">
+
+<div class="card-content">
+
+<h3>Oberoi Amarvilas</h3>
+
+<p><i class="fa-solid fa-location-dot"></i> Agra</p>
+
+<p>★★★★★ Premium suites with breathtaking Taj Mahal views.</p>
+
+<a href="booking.html">Book Now →</a>
+
+</div>
+
+</div>
+
+<!-- Hotel 3 -->
+
+<div class="card hotel heritage">
+
+<img src="images/clarks.jpg" alt="Clarks Avadh">
+
+<div class="card-content">
+
+<h3>Clarks Avadh</h3>
+
+<p><i class="fa-solid fa-location-dot"></i> Lucknow</p>
+
+<p>Elegant heritage-style hotel in the heart of Lucknow.</p>
+
+<a href="booking.html">Book Now →</a>
+
+</div>
+
+</div>
+
+<!-- Hotel 4 -->
+
+<div class="card hotel luxury">
+
+<img src="images/taj-ganges.jpg" alt="Taj Ganges">
+
+<div class="card-content">
+
+<h3>Taj Ganges</h3>
+
+<p><i class="fa-solid fa-location-dot"></i> Varanasi</p>
+
+<p>Luxury accommodation close to Kashi Vishwanath Temple.</p>
+
+<a href="booking.html">Book Now →</a>
+
+</div>
+
+</div>
+
+<!-- Hotel 5 -->
+
+<div class="card hotel budget">
+
+<img src="images/ginger.jpg" alt="Ginger Hotel">
+
+<div class="card-content">
+
+<h3>Ginger Hotel</h3>
+
+<p><i class="fa-solid fa-location-dot"></i> Noida</p>
+
+<p>Affordable stay with modern amenities.</p>
+
+<a href="booking.html">Book Now →</a>
+
+</div>
+
+</div>
+
+<!-- Hotel 6 -->
+
+<div class="card hotel budget">
+
+<img src="images/treebo.jpg" alt="Treebo">
+
+<div class="card-content">
+
+<h3>Treebo Trend</h3>
+
+<p><i class="fa-solid fa-location-dot"></i> Prayagraj</p>
+
+<p>Comfortable rooms at budget-friendly prices.</p>
+
+<a href="booking.html">Book Now →</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= More Hotels ================= -->
+
+<section class="section">
+
+    <div class="cards">
+
+        <!-- Hotel 7 -->
+
+        <div class="card hotel luxury">
+
+            <img src="images/radisson.jpg" alt="Radisson Hotel">
+
+            <div class="card-content">
+
+                <h3>Radisson Hotel</h3>
+
+                <p><i class="fa-solid fa-location-dot"></i> Lucknow</p>
+
+                <p>
+                    Modern luxury hotel featuring premium rooms,
+                    rooftop dining and conference facilities.
+                </p>
+
+                <a href="booking.html">Book Now →</a>
+
+            </div>
+
+        </div>
+
+        <!-- Hotel 8 -->
+
+        <div class="card hotel heritage">
+
+            <img src="images/lebua.jpg" alt="Lebua Hotel">
+
+            <div class="card-content">
+
+                <h3>Lebua Lucknow</h3>
+
+                <p><i class="fa-solid fa-location-dot"></i> Lucknow</p>
+
+                <p>
+                    Heritage-inspired boutique hotel blending
+                    royal elegance with modern comfort.
+                </p>
+
+                <a href="booking.html">Book Now →</a>
+
+            </div>
+
+        </div>
+
+        <!-- Hotel 9 -->
+
+        <div class="card hotel budget">
+
+            <img src="images/fabhotel.jpg" alt="FabHotel">
+
+            <div class="card-content">
+
+                <h3>FabHotel Prime</h3>
+
+                <p><i class="fa-solid fa-location-dot"></i> Kanpur</p>
+
+                <p>
+                    Comfortable accommodation with complimentary
+                    breakfast and Wi-Fi.
+                </p>
+
+                <a href="booking.html">Book Now →</a>
+
+            </div>
+
+        </div>
+
+        <!-- Hotel 10 -->
+
+        <div class="card hotel luxury">
+
+            <img src="images/ramada.jpg" alt="Ramada Plaza">
+
+            <div class="card-content">
+
+                <h3>Ramada Plaza</h3>
+
+                <p><i class="fa-solid fa-location-dot"></i> Varanasi</p>
+
+                <p>
+                    Premium hotel with swimming pool,
+                    spa and excellent dining facilities.
+                </p>
+
+                <a href="booking.html">Book Now →</a>
+
+            </div>
+
+        </div>
+
+        <!-- Hotel 11 -->
+
+        <div class="card hotel heritage">
+
+            <img src="images/brijrama.jpg" alt="BrijRama Palace">
+
+            <div class="card-content">
+
+                <h3>BrijRama Palace</h3>
+
+                <p><i class="fa-solid fa-location-dot"></i> Varanasi</p>
+
+                <p>
+                    Historic palace hotel overlooking
+                    the sacred Ganga River.
+                </p>
+
+                <a href="booking.html">Book Now →</a>
+
+            </div>
+
+        </div>
+
+        <!-- Hotel 12 -->
+
+        <div class="card hotel budget">
+
+            <img src="images/hotel-surya.jpg" alt="Hotel Surya">
+
+            <div class="card-content">
+
+                <h3>Hotel Surya</h3>
+
+                <p><i class="fa-solid fa-location-dot"></i> Varanasi</p>
+
+                <p>
+                    Budget-friendly stay with spacious rooms
+                    and excellent hospitality.
+                </p>
+
+                <a href="booking.html">Book Now →</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Amenities ================= -->
+
+<section class="section why">
+
+    <h2>Why Stay With Our Partner Hotels?</h2>
+
+    <div class="features">
+
+        <div class="feature">
+
+            <i class="fa-solid fa-wifi"></i>
+
+            <h3>Free Wi-Fi</h3>
+
+            <p>High-speed internet access in every hotel.</p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-utensils"></i>
+
+            <h3>Restaurant</h3>
+
+            <p>Enjoy authentic Uttar Pradesh cuisine.</p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-car"></i>
+
+            <h3>Free Parking</h3>
+
+            <p>Secure parking facilities for tourists.</p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-bell-concierge"></i>
+
+            <h3>24×7 Service</h3>
+
+            <p>Professional hospitality round the clock.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Statistics ================= -->
+
+<section class="stats">
+
+    <div>
+
+        <h2>500+</h2>
+
+        <p>Partner Hotels</p>
+
+    </div>
+
+    <div>
+
+        <h2>4★ & 5★</h2>
+
+        <p>Luxury Properties</p>
+
+    </div>
+
+    <div>
+
+        <h2>50K+</h2>
+
+        <p>Happy Guests</p>
+
+    </div>
+
+    <div>
+
+        <h2>24×7</h2>
+
+        <p>Customer Support</p>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="newsletter">
+
+    <h2>Book Your Perfect Stay</h2>
+
+    <p>
+
+        Choose from luxury, heritage and budget hotels across
+        Uttar Pradesh and enjoy a memorable journey.
+
+    </p>
+
+    <a href="booking.html" class="btn">
+
+        Book Accommodation
+
+    </a>
+
+</section>
+
+<!-- ================= Footer ================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 Uttar Pradesh Tourism Information Portal
+
+    </p>
+
+    <div class="social">
+
+        <a href="#"><i class="fab fa-facebook"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+    </div>
+
+</footer>
+
+<button id="topBtn" onclick="topFunction()">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

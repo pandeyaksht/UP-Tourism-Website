@@ -1,0 +1,906 @@
+/* ===========================
+   Uttar Pradesh Tourism Portal
+   Main Stylesheet
+=========================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ---------------- Navbar ---------------- */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#0b5ed7;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:white;
+}
+
+.logo i{
+    font-size:42px;
+    color:#ffd54f;
+}
+
+.logo h2{
+    font-size:32px;
+    font-weight:700;
+}
+
+.logo small{
+    color:#e8f0ff;
+    font-size:14px;
+}
+
+nav ul{
+    display:flex;
+    align-items:center;
+    list-style:none;
+    gap:28px;
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    margin:0;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    padding:8px 15px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    background:#ffffff;
+    color:#0b5ed7;
+}
+/* ---------------- Hero ---------------- */
+
+.hero{
+
+    position:relative;
+    height:70vh;
+
+    background:url("../images/hero1.jpg")
+    center center/cover no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    overflow:hidden;
+
+}
+
+.overlay{
+
+    position:absolute;
+    inset:0;
+    background:linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55));
+
+}
+
+.hero-content{
+
+    position:relative;
+    z-index:2;
+    max-width:750px;
+    color:white;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+    background:rgba(255,255,255,.2);
+    padding:8px 18px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-size:14px;
+    backdrop-filter:blur(5px);
+
+}
+
+.hero h1{
+    font-size:64px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:20px;
+    color:#f1f1f1;
+}
+
+.hero-buttons{
+
+    margin-top:20px;
+
+}
+
+.hero-content{
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Search */
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+.search-box input{
+
+    width:320px;
+    padding:12px;
+    border:none;
+    border-radius:5px 0 0 5px;
+    outline:none;
+
+}
+
+.search-box button{
+
+    background:#ff9800;
+    color:#fff;
+    border:none;
+    padding:12px 18px;
+    cursor:pointer;
+    border-radius:0 5px 5px 0;
+
+}
+
+.search-box button:hover{
+
+    background:#e68900;
+
+}
+
+/* Button */
+
+.btn{
+
+    display:inline-block;
+    background:#ff9800;
+    color:white;
+    padding:12px 28px;
+    text-decoration:none;
+    border-radius:5px;
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#e68900;
+    transform:translateY(-2px);
+
+}
+
+.btn-outline{
+
+    background:transparent;
+    border:2px solid white;
+    margin-left:15px;
+
+}
+
+.btn-outline:hover{
+
+    background:white;
+    color:#0b5ed7;
+
+}
+/* ---------------- Sections ---------------- */
+
+.section{
+
+    max-width:1200px;
+    margin:60px auto;
+    padding:0 20px;
+
+}
+
+.section h2{
+
+    text-align:center;
+    color:#0b5ed7;
+    margin-bottom:35px;
+
+}
+.section-text{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:0 auto 40px;
+
+    color:#666;
+
+}
+
+/* ---------------- Cards ---------------- */
+
+.card{
+
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.2);
+
+}
+
+.card img{
+
+    height:220px;
+    width:100%;
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.card-content{
+
+    padding:20px;
+
+}
+
+.card-content h3{
+
+    margin-bottom:10px;
+
+}
+
+.card-content p{
+
+    color:#666;
+    margin-bottom:15px;
+
+}
+
+.card-content a{
+
+    color:#0b5ed7;
+    font-weight:600;
+    text-decoration:none;
+
+}
+
+.card{
+    cursor:pointer;
+}
+
+.card img{
+    transition:.4s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+/* ---------------- Features ---------------- */
+
+.feature{
+    transition:.35s;
+}
+
+.feature:hover{
+    transform:translateY(-12px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.feature i{
+
+    transition:.3s;
+
+}
+
+.feature:hover i{
+
+    transform:rotate(10deg) scale(1.15);
+
+}
+
+/* ---------------- Statistics ---------------- */
+
+.stats{
+
+    background:#0b5ed7;
+    color:white;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    text-align:center;
+    padding:50px 20px;
+    margin-top:60px;
+
+}
+
+.stats h2{
+
+    font-size:36px;
+
+}
+
+.stats p{
+
+    margin-top:10px;
+
+}
+.stat-box{
+
+    padding:25px;
+
+}
+
+.stat-box h2{
+
+    font-size:48px;
+
+    margin-bottom:10px;
+
+}
+
+/* ---------------- Footer ---------------- */
+
+footer{
+
+    background:#111;
+
+    padding:35px;
+
+}
+
+footer p{
+
+    opacity:.8;
+
+}
+
+.social{
+
+    margin-top:18px;
+
+}
+
+.social a{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:45px;
+
+    height:45px;
+
+    background:#222;
+
+    border-radius:50%;
+
+}
+
+.social a:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media(max-width:768px){
+
+nav{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+nav ul li{
+
+margin:8px 10px;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.search-box{
+
+flex-direction:column;
+align-items:center;
+
+}
+
+.search-box input{
+
+width:100%;
+max-width:320px;
+border-radius:5px;
+margin-bottom:10px;
+
+}
+
+.search-box button{
+
+border-radius:5px;
+width:120px;
+
+}
+
+}
+#topBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#0b5ed7;
+    color:white;
+    border:none;
+    padding:12px 16px;
+    font-size:20px;
+    border-radius:50%;
+    cursor:pointer;
+    display:none;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+
+#topBtn:hover{
+    background:#ff9800;
+}
+
+.newsletter{
+
+    background:linear-gradient(135deg,#0b5ed7,#1b74e4);
+
+    color:white;
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+.newsletter p{
+
+    margin:20px auto;
+
+    max-width:650px;
+
+}
+
+.newsletter-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:30px;
+
+}
+
+.newsletter-box input{
+
+    width:330px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:6px;
+
+    outline:none;
+
+}
+
+.newsletter-box button{
+
+    padding:14px 30px;
+
+    border:none;
+
+    background:#ff9800;
+
+    color:white;
+
+    cursor:pointer;
+
+    border-radius:6px;
+
+    transition:.3s;
+
+}
+
+.newsletter-box button:hover{
+
+    background:#e68900;
+
+}
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+.admin-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#fff;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.admin-table th{
+
+    background:#0b5ed7;
+
+    color:#fff;
+
+    padding:15px;
+
+    text-align:left;
+
+}
+
+.admin-table td{
+
+    padding:15px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.admin-table tr:hover{
+
+    background:#f5f7fb;
+
+}
+
+.status{
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.confirmed{
+
+    background:#d4edda;
+
+    color:#155724;
+
+}
+
+.pending{
+
+    background:#fff3cd;
+
+    color:#856404;
+
+}
+
+.cancelled{
+
+    background:#f8d7da;
+
+    color:#721c24;
+
+}
+/* ================= Admin Login ================= */
+
+.login-page{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("../images/tajmahal.jpg") center/cover;
+
+}
+
+.login-box{
+
+width:400px;
+
+background:rgba(255,255,255,.95);
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+backdrop-filter:blur(8px);
+
+}
+
+.login-icon{
+
+width:90px;
+
+height:90px;
+
+margin:auto;
+
+border-radius:50%;
+
+background:#0b5ed7;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+color:white;
+
+font-size:40px;
+
+margin-bottom:20px;
+
+}
+
+.login-box h1{
+
+color:#0b5ed7;
+
+margin-bottom:5px;
+
+}
+
+.login-box p{
+
+margin-bottom:30px;
+
+color:#666;
+
+}
+
+.input-box{
+
+display:flex;
+
+align-items:center;
+
+background:#f5f5f5;
+
+border-radius:30px;
+
+padding:0 15px;
+
+margin-bottom:20px;
+
+border:1px solid #ddd;
+
+}
+
+.input-box i{
+
+color:#0b5ed7;
+
+margin-right:10px;
+
+}
+
+.input-box input{
+
+width:100%;
+
+padding:14px;
+
+border:none;
+
+background:none;
+
+outline:none;
+
+font-size:15px;
+
+}
+
+.input-box:focus-within{
+
+border-color:#0b5ed7;
+
+box-shadow:0 0 10px rgba(11,94,215,.25);
+
+}
+
+.remember{
+
+text-align:left;
+
+margin-bottom:20px;
+
+font-size:14px;
+
+}
+
+.login-btn{
+
+width:100%;
+
+padding:14px;
+
+border:none;
+
+border-radius:30px;
+
+background:#0b5ed7;
+
+color:white;
+
+font-size:17px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.login-btn:hover{
+
+background:#0849a6;
+
+transform:translateY(-3px);
+
+}
+
+.back-home{
+
+display:block;
+
+margin-top:20px;
+
+text-decoration:none;
+
+color:#0b5ed7;
+
+font-weight:600;
+
+}
+
+.back-home:hover{
+
+color:#ff9800;
+
+}
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:contain;
+
+    background:#f5f5f5;
+
+}

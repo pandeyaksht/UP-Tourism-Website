@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | UP Tourism</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-user-shield"></i>
+
+<div>
+
+<h2>UP Tourism</h2>
+
+<small>Admin Dashboard</small>
+
+</div>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Website</a></li>
+
+<li><a href="#">Dashboard</a></li>
+
+<li><a href="#">Reports</a></li>
+
+<li><a href="#">Settings</a></li>
+
+<li><a href="index.html">Logout</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Tourism Management Dashboard</h1>
+
+<p>
+
+Monitor bookings, attractions, hotels and tourist enquiries.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Dashboard Overview</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-check fa-3x"></i>
+
+<h3>1,248</h3>
+
+<p>Total Bookings</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hotel fa-3x"></i>
+
+<h3>512</h3>
+
+<p>Hotels Registered</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-landmark fa-3x"></i>
+
+<h3>75</h3>
+
+<p>Tourist Attractions</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-users fa-3x"></i>
+
+<h3>10.2M</h3>
+
+<p>Visitors</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Quick Actions</h2>
+
+<div class="features">
+
+<div class="feature">
+
+<i class="fa-solid fa-plus"></i>
+
+<h3>Add Attraction</h3>
+
+<p>
+
+Add new tourist destinations.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-hotel"></i>
+
+<h3>Manage Hotels</h3>
+
+<p>
+
+Update hotel information.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-book"></i>
+
+<h3>View Bookings</h3>
+
+<p>
+
+Check recent reservations.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h3>Messages</h3>
+
+<p>
+
+Read visitor enquiries.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= Recent Bookings ================= -->
+
+<section class="section">
+
+    <h2>Recent Bookings</h2>
+
+    <div style="overflow-x:auto;">
+
+        <table class="admin-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Booking ID</th>
+
+                    <th>Tourist</th>
+
+                    <th>Destination</th>
+
+                    <th>Hotel</th>
+
+                    <th>Date</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>UP1001</td>
+
+                    <td>Rahul Sharma</td>
+
+                    <td>Taj Mahal</td>
+
+                    <td>ITC Mughal</td>
+
+                    <td>12 Jun 2026</td>
+
+                    <td><span class="status confirmed">Confirmed</span></td>
+
+                </tr>
+
+                <tr>
+
+                    <td>UP1002</td>
+
+                    <td>Priya Singh</td>
+
+                    <td>Varanasi</td>
+
+                    <td>Taj Ganges</td>
+
+                    <td>14 Jun 2026</td>
+
+                    <td><span class="status pending">Pending</span></td>
+
+                </tr>
+
+                <tr>
+
+                    <td>UP1003</td>
+
+                    <td>Amit Verma</td>
+
+                    <td>Ayodhya</td>
+
+                    <td>Clarks Avadh</td>
+
+                    <td>18 Jun 2026</td>
+
+                    <td><span class="status confirmed">Confirmed</span></td>
+
+                </tr>
+
+                <tr>
+
+                    <td>UP1004</td>
+
+                    <td>Neha Gupta</td>
+
+                    <td>Lucknow</td>
+
+                    <td>Radisson</td>
+
+                    <td>20 Jun 2026</td>
+
+                    <td><span class="status cancelled">Cancelled</span></td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ================= Recent Enquiries ================= -->
+
+<section class="section">
+
+    <h2>Recent Contact Messages</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Rohan Mehta</h3>
+
+            <p><strong>Subject:</strong> Hotel Booking</p>
+
+            <p>
+
+                I would like to know the availability of hotels near the
+                Taj Mahal for next weekend.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Anjali Patel</h3>
+
+            <p><strong>Subject:</strong> Tour Guide</p>
+
+            <p>
+
+                Do you provide multilingual tourist guides in Varanasi?
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Mohit Kumar</h3>
+
+            <p><strong>Subject:</strong> Dudhwa Safari</p>
+
+            <p>
+
+                Please share safari timings and ticket information.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Popular Destinations ================= -->
+
+<section class="section why">
+
+    <h2>Most Visited Attractions</h2>
+
+    <div class="features">
+
+        <div class="feature">
+
+            <i class="fa-solid fa-landmark"></i>
+
+            <h3>Taj Mahal</h3>
+
+            <p>
+
+                3.8 Million Visitors
+
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-place-of-worship"></i>
+
+            <h3>Ram Mandir</h3>
+
+            <p>
+
+                2.6 Million Visitors
+
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-water"></i>
+
+            <h3>Varanasi Ghats</h3>
+
+            <p>
+
+                2.3 Million Visitors
+
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-tree"></i>
+
+            <h3>Dudhwa National Park</h3>
+
+            <p>
+
+                950K Visitors
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= Statistics ================= -->
+
+<section class="stats">
+
+    <div>
+
+        <h2>₹2.8 Cr</h2>
+
+        <p>Revenue Generated</p>
+
+    </div>
+
+    <div>
+
+        <h2>1,248</h2>
+
+        <p>Total Bookings</p>
+
+    </div>
+
+    <div>
+
+        <h2>94%</h2>
+
+        <p>Customer Satisfaction</p>
+
+    </div>
+
+    <div>
+
+        <h2>98%</h2>
+
+        <p>Successful Tours</p>
+
+    </div>
+
+</section>
+
+<!-- ================= Footer ================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 Uttar Pradesh Tourism Admin Dashboard
+
+    </p>
+
+    <div class="social">
+
+        <a href="#"><i class="fab fa-facebook"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+        <a href="#"><i class="fab fa-youtube"></i></a>
+
+    </div>
+
+</footer>
+
+<button id="topBtn" onclick="topFunction()">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

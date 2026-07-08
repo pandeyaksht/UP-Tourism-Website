@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.vit.devops</groupId>
+
+    <artifactId>up-tourism-website</artifactId>
+
+    <version>1.0.0</version>
+
+    <packaging>pom</packaging>
+
+    <name>Uttar Pradesh Tourism Information Website</name>
+
+    <description>Static Tourism Website for DevOps Assignment</description>
+
+    <build>
+
+        <plugins>
+
+            <plugin>
+
+                <groupId>org.apache.maven.plugins</groupId>
+
+                <artifactId>maven-clean-plugin</artifactId>
+
+                <version>3.4.0</version>
+
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+</project>
