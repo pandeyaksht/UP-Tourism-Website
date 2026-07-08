@@ -15,13 +15,13 @@ pipeline {
             }
         }
 
-        stage('Docker Build') {
+        stage('Build Docker Image') {
             steps {
                 bat 'docker build -t up-tourism:1.0 .'
             }
         }
 
-        stage('Docker Run') {
+        stage('Deploy Docker Container') {
             steps {
                 bat 'docker rm -f up-tourism-container || exit 0'
                 bat 'docker run -d --name up-tourism-container -p 8090:80 up-tourism:1.0'
@@ -31,11 +31,10 @@ pipeline {
 
     post {
         success {
-            echo 'UP Tourism Website deployed successfully.'
+            echo 'Build and deployment completed successfully.'
         }
-
         failure {
-            echo 'Pipeline failed.'
+            echo 'Pipeline execution failed.'
         }
     }
 }
